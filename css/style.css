@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #121212;
+    color: #f1f1f1;
+}
+
+header {
+    background-color: rgba(34, 33, 33, 0.7);
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #ffffff;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    gap: 20px;
+}
+
+nav a {
+    color: #f1f1f1;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #ff6f00;
+}
+
+main.grade {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.box {
+    background-color: #1e1e1e;
+    border-radius: 10px;
+    padding: 60px 0;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 20px rgba(255, 111, 0, 0.4);
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #1e1e1e;
+    border-top: 1px solid #333;
+    font-size: 0.9rem;
+    color: #aaa;
+}
+
+.foto-perfil {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+
+.conteudo-sobre {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #f1f1f1;
+    background-color: #1e1e1e;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(255, 111, 0, 0.3);
+}
+
+
+.conteudo-sobre a {
+    color: #ff6f00;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.conteudo-sobre a:hover {
+    text-decoration: underline;
+}
+
+mark {
+    background-color: #004567;
+    color: black;
+    padding: 2px 4px;
+    border-radius: 8px;
+}
+
+body {
+    background-image: url('../img/fundo3.png');
+    filter: brightness(0.8);
+    
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+    
+    
+}
+/* Estilo para ícones de redes sociais dentro dos cards */
+.redes-sociais {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #1e1e1e;
+    border-radius: 12px;
+    padding: 30px 20px;
+    color: #f1f1f1;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.redes-sociais:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 16px 24px rgba(255, 111, 0, 0.4);
+}
+
+.icone-social {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 15px;
+    transition: transform 0.3s;
+}
+
+.redes-sociais:hover .icone-social {
+    transform: scale(1.1);
+}
+
+.redes-sociais .conteudo {
+    font-size: 1.1rem;
+    color: #fff;
+}
