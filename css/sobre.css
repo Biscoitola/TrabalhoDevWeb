@@ -5,28 +5,12 @@ body {
   font-family: 'Montserrat', sans-serif;
   background-color: #121212;
   color: #f1f1f1;
-  position: relative;
-}
-
-body::before {
-  content: "";
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background: linear-gradient(270deg, #ff00ff, #00ffff, #ff0000, #00ff00, #0000ff);
-  background-size: 1000% 1000%;
-  animation: neonMove 15s ease infinite;
-  z-index: -1;
-  opacity: 0.2;
-  filter: blur(80px);
-}
-
-@keyframes neonMove {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
+  background-image: url('../img/background7.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  filter: brightness(0.8);
 }
 
 header {
@@ -74,7 +58,9 @@ nav .ativo {
   box-shadow: 0 8px 16px rgba(255, 111, 0, 0.3);
   font-size: 1.1rem;
   line-height: 1.6;
+  position: relative; /* Para posicionar o botão dentro */
 }
+
 
 .foto-perfil {
   width: 200px;
@@ -100,6 +86,33 @@ mark {
   text-decoration: underline;
 }
 
+.btn-topo {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 1000;
+  background-color: #ff006f;
+  color: white;
+  text-decoration: none;
+  width: 48px;
+  height: 48px;
+  font-size: 24px;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-topo:hover {
+  background-color: #ff3f90;
+  transform: scale(1.1);
+}
+
+
+
 footer {
   text-align: center;
   padding: 20px;
@@ -107,4 +120,69 @@ footer {
   border-top: 1px solid #333;
   font-size: 0.9rem;
   color: #aaa;
+}
+
+/* Botão para ativar o modo segredo */
+.botao-modo-segredo {
+  color: #ff6f00;
+  cursor: pointer;
+  font-weight: bold;
+  text-decoration: underline;
+  width: fit-content;
+  margin: 30px auto;
+  user-select: none;
+  transition: color 0.3s ease;
+  display: block;
+  text-align: center;
+}
+
+.botao-modo-segredo:hover,
+.botao-modo-segredo:focus {
+  color: #ffa500;
+  outline: none;
+}
+
+/* Conteúdo do modo segredo escondido inicialmente */
+.conteudo-modo-segredo {
+  max-width: 400px;
+  margin: 20px auto;
+  background: #1e1e1e;
+  border: 3px solid #ff6f00;
+  border-radius: 15px;
+  box-shadow: 0 0 30px #ff6f00cc;
+  padding: 30px 25px 40px;
+  color: #f1f1f1;
+  text-align: center;
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 0.5s ease, max-height 0.5s ease;
+  pointer-events: none;
+}
+
+/* Mostrar conteúdo quando o checkbox estiver marcado */
+#controle-modo-segredo:checked + .conteudo-modo-segredo {
+  opacity: 1;
+  max-height: 500px; /* Ajuste conforme o conteúdo */
+  pointer-events: auto;
+}
+
+/* Estilo do conteúdo interno */
+.conteudo-modo-segredo h3 {
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+  color: #ff6f00;
+}
+
+.conteudo-modo-segredo p {
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+
+.conteudo-modo-segredo img {
+  margin-top: 15px;
+  max-width: 150px;
+  border-radius: 50%;
+  border: 2px solid #ff6f00;
+  box-shadow: 0 0 20px #ff6f00aa;
 }

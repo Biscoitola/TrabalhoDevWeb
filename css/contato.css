@@ -5,7 +5,7 @@ body {
   font-family: 'Montserrat', sans-serif;
   background-color: #121212;
   color: #f1f1f1;
-  background-image: url('../img/fundo3.png');
+  background-image: url('../img/background3.jpeg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -35,15 +35,20 @@ nav ul {
 }
 
 nav a {
-  color: #f1f1f1;
+  color: #e0e0f8;
   text-decoration: none;
-  font-weight: 700;
-  transition: color 0.3s;
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 8px 14px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
 }
 
 nav a:hover,
 nav a.ativo {
-  color: #ff6f00;
+  background: rgba(255, 30, 199, 0.15);
+  color: #ff5900;
+  box-shadow: 0 0 20px #ff5900;
 }
 
 .container-contato {
