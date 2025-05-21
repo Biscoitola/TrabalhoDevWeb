@@ -70,6 +70,7 @@ nav a.ativo {
   display: flex;
   flex-direction: column;
   gap: 15px;
+  
 }
 
 .projeto:hover {
@@ -79,9 +80,10 @@ nav a.ativo {
 
 .projeto img {
   max-width: 100%;
-  border-radius: 10px;
-  object-fit: cover;
-  height: 180px;
+  height: auto;       /* mantém a proporção original da imagem */
+  border-radius: 1000px;
+  object-fit: contain; /* mantém toda a imagem visível */
+  background-color: #222; /* opcional, para a área extra da imagem */
 }
 
 .projeto h2 {

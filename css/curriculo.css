@@ -6,7 +6,7 @@ body {
   background-color: #0a0a15;
   background-image: 
     radial-gradient(circle at top left, rgba(58, 134, 255, 0.15), transparent 60%),
-    radial-gradient(circle at bottom right, rgba(255, 90, 200, 0.15), transparent 70%),
+    radial-gradient(circle at bottom right, rgba(255, 90, 200, 0.15), transparent 0.8%),
     url('../img/background6.png'); /* imagem com fumaça ou efeito visual */
   background-size: cover;
   background-position: center;
@@ -14,7 +14,7 @@ body {
   background-attachment: fixed;
 }
 
-/* Cabeçalho */
+
 header {
   background-color: rgba(34, 33, 33, 0.7);
   padding: 10px;
@@ -59,7 +59,7 @@ main.curriculo-conteudo {
   max-width: 850px;
   margin: 50px auto;
   padding: 30px;
-  background: rgba(20, 20, 35, 0.85);
+  background: rgba(20, 20, 35);
   border-radius: 20px;
   box-shadow: 
     0 0 20px rgba(56, 16, 255, 0.2),
@@ -68,14 +68,14 @@ main.curriculo-conteudo {
 
 /* Títulos */
 h2 {
-  color: #1aff00;
-  border-left: 4px solid #73ff00;
+  color: #ff5900;
+  border-left: 4px solid #ffc800;
   padding-left: 10px;
   margin-top: 30px;
   font-weight: 600;
 }
 
-/* Links gerais */
+
 a {
   color: #81d4fa;
   font-weight: bold;
@@ -88,7 +88,6 @@ a:hover {
   color: #ff80ab;
 }
 
-/* BOTÃO "↑ TOPO" FIXO E SEMPRE VISÍVEL */
 .btn-topo {
   position: fixed;
   bottom: 30px;

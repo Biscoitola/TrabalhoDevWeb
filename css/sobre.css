@@ -5,7 +5,9 @@ body {
   font-family: 'Montserrat', sans-serif;
   background-color: #121212;
   color: #f1f1f1;
+  
   background-image: url('../img/background7.png');
+  
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -35,10 +37,13 @@ nav ul {
 }
 
 nav a {
-  color: #f1f1f1;
+  color: #e0e0f8;
   text-decoration: none;
   font-weight: bold;
-  transition: color 0.3s;
+  font-size: 1rem;
+  padding: 8px 14px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
 }
 
 nav a:hover {
@@ -47,6 +52,9 @@ nav a:hover {
 
 nav .ativo {
   color: #ff6f00;
+  background: rgba(255, 30, 199, 0.15);
+  color: #ff5900;
+  box-shadow: 0 0 20px #ff5900;
 }
 
 .conteudo-sobre {
@@ -70,7 +78,7 @@ nav .ativo {
 }
 
 mark {
-  background-color: #004567;
+  background-color: #c3ff00;
   color: black;
   padding: 2px 4px;
   border-radius: 8px;
@@ -178,4 +186,89 @@ footer {
 .conteudo-modo-segredo p {
   font-size: 1.1rem;
   line-height: 1.5;
+}
+/* habilidades */
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  gap: 20px;
+}
+
+nav a {
+  color: #e0e0f8;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 8px 14px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+nav a:hover,
+nav a.ativo {
+  background: rgba(255, 30, 199, 0.15);
+  color: #ff5900;
+  box-shadow: 0 0 20px #ff5900;
+}
+
+main.grade {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.redes-sociais {
+  background-color: #1e1e1e;
+  border-radius: 12px;
+  padding: 30px 20px;
+  color: #f1f1f1;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.redes-sociais:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 16px 24px rgba(255, 111, 0, 0.5);
+}
+
+.icone-social {
+  width: 60px;
+  height: 60px;
+  transition: transform 0.3s;
+}
+
+.redes-sociais:hover .icone-social {
+  transform: scale(1.1);
+}
+
+.redes-sociais .conteudo {
+  font-size: 1.1rem;
+  color: #fff;
+}
+.meio{  background-color: #1e1e1e;
+  border-radius: 12px;
+  padding: 30px 20px;
+  color: #f1f1f1;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;}
+
+  o  {
+  background-color: rgb(0, 255, 255);
+  color: black;
+  padding: 2px 4px;
+  border-radius: 8px;
 }

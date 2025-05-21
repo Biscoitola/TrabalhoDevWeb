@@ -15,20 +15,25 @@
     <nav>
       <ul>
         <li><a href="index.html">Início</a></li>
-        <li><a href="sobre.html">Sobre</a></li>
-        <li><a href="projetos.html">Projetos</a></li>
         <li><a href="contato.html" class="ativo">Contato</a></li>
+        <li><a href="feedback.html">Feedback</a></li>
       </ul>
     </nav>
     <div id="topo"></div>
   </header>
 
   <main class="container-contato">
-    <form action="#" method="post" class="form-contato">
+    <form action="../html/enviado.html" method="get" class="form-contato">
       <h2>Fale comigo</h2>
 
       <label for="nome">Nome</label>
       <input type="text" id="nome" name="nome" placeholder="Seu nome" required />
+
+      <label for="nome">cidade</label>
+      <input type="text" id="cidade" name="cidade" placeholder="sua cidade" required />
+
+      <label for="nome">estado</label>
+      <input type="text" id="estado" name="estado" placeholder="Seu estado" required />
 
       <label for="email">E-mail</label>
       <input type="email" id="email" name="email" placeholder="seu@email.com" required />
@@ -43,7 +48,7 @@
   <footer>
     <p>&copy; 2025 - Guilherme de Oliveira Cruz</p>
   </footer>
-      <!-- Botão fixo -->
+  <!-- Botão fixo -->
   <a href="#topo" class="btn-topo" title="Voltar ao topo">↑</a>
 
 </body>
