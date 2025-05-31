@@ -1,155 +1,166 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
+
 body {
-  margin: 0;
-  font-family: 'Montserrat', sans-serif;
-  background-color: #121212;
-  color: #f1f1f1;
-  background-image: url('../img/background8.png');
+  margin: 0; 
+  font-family: 'Montserrat', sans-serif; 
+  background-color: #121212; 
+  color: #f1f1f1; 
+  background-image: url('../img/background8.png'); 
   background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  filter: brightness(0.8);
+  background-position: center; 
+  background-repeat: no-repeat; 
+  background-attachment: fixed; /* Fundo fixo ao rolar página */
+  filter: brightness(0.8); /* Diminui o brilho do fundo */
 }
 
 header {
-  background-color: rgba(34, 33, 33, 0.7);
-  padding: 10px;
-  text-align: center;
-  border-bottom: 1px solid #fff;
+  background-color: rgba(34, 33, 33, 0.7); 
+  padding: 10px; 
+  text-align: center; 
+  border-bottom: 1px solid #fff; 
 }
 
 header h1 {
-  margin: 0;
-  font-size: 2rem;
-  color: #f1f1f1;
+  margin: 0; 
+  font-size: 2rem; 
+  color: #f1f1f1; 
 }
 
 nav ul {
-  list-style: none;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  margin-top: 10px;
-  gap: 20px;
+  list-style: none; 
+  padding: 0; 
+  display: flex; 
+  justify-content: center; 
+  margin-top: 10px; 
+  gap: 20px; 
 }
 
 nav a {
-  color: #e0e0f8;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 1rem;
-  padding: 8px 14px;
-  border-radius: 8px;
-  transition: all 0.3s ease;
+  color: #e0e0f8; /* Cor dos links */
+  text-decoration: none; 
+  font-weight: bold; 
+  font-size: 1rem; 
+  padding: 8px 14px; 
+  border-radius: 8px; 
+  transition: all 0.3s ease; /* Transição suave para todos os efeitos */
 }
 
 nav a:hover,
 nav a.ativo {
   background: rgba(255, 30, 199, 0.15);
-  color: #ff5900;
-  box-shadow: 0 0 20px #ff5900;
+  color: #ff5900; 
+  box-shadow: 0 0 20px #ff5900; /* Sombra laranja brilhante */
 }
 
 .grade {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 25px;
-  padding: 40px 20px;
-  max-width: 1200px;
-  margin: 0 auto;
+  display: grid; /* Layout em grade */
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); 
+  gap: 25px; 
+  padding: 40px 20px; 
+  max-width: 1200px; 
+  margin: 0 auto; 
+  
 }
 
 .box {
-  background-color: #1e1e1e;
-  border-radius: 12px;
-  padding: 30px 15px;
-  text-align: center;
-  color: #fff;
-  font-weight: 700;
-  font-size: 1.3rem;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
-  text-decoration: none;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 15px;
+  width: 100%px; /* largura fixa (ou use max-width se quiser flexibilidade) */
+  height: 300px; /* altura controlada */
+  
+  background-color: #1e1e1e; 
+  border-radius: 12px; 
+  padding: 30px 15px; 
+  text-align: center; 
+  color: #fff; 
+  font-weight: 700; 
+  font-size: 1.3rem; 
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Sombra suave */
+  text-decoration: none; 
+  transition: transform 0.3s ease, box-shadow 0.3s ease; 
+  flex-direction: column; 
+  align-items: center; 
+  gap: 15px; 
 }
 
 .box:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 16px 24px rgba(255, 111, 0, 0.5);
+  transform: translateY(-8px); /* Levanta o box no hover */
+  box-shadow: 0 16px 24px rgba(255, 111, 0, 0.5); /* Sombra laranja mais intensa */
 }
 
 .foto-perfil {
-  width: 150px;
+  width: 150px; 
   height: 150px;
-  border-radius: 50%;
-  object-fit: cover;
+  border-radius: 50%; 
+  object-fit: cover; 
 }
 
 .conteudo {
-  color: #fff;
+  color: #fff; 
 }
   
 footer {
-  text-align: center;
-  padding: 20px;
-  background-color: #1e1e1e;
-  border-top: 1px solid #333;
-  font-size: 0.9rem;
-  color: #aaa;
+  text-align: center; 
+  padding: 20px; 
+  background-color: #1e1e1e; 
+  border-top: 1px solid #333; 
+  font-size: 0.9rem; 
+  color: #aaa; 
 }
 
 /* Checkbox escondido */
 .easter-toggle {
-  display: none;
+  display: none; /* Esconde o checkbox usado para controle do easter egg */
 }
 
 /* Botão invisível no canto inferior direito */
 .easter-button {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
+  position: fixed; 
+  bottom: 20px; 
+  right: 20px; 
   width: 50px;
-  height: 50px;
-  background: transparent;
-  cursor: pointer;
-  border-radius: 50%;
-  /* só pra dar um efeito, deixe invisível mas com um hover sutil */
-  box-shadow: 0 0 0 0 transparent;
-  transition: box-shadow 0.3s ease;
-  z-index: 2000;
+  height: 50px; 
+  background: transparent; 
+  cursor: pointer; 
+  border-radius: 50%; 
+  box-shadow: 0 0 0 0 transparent; /* Sombra invisível inicialmente */
+  transition: box-shadow 0.3s ease; /* Transição suave para sombra */
+  z-index: 2000; 
 }
 
 .easter-button:hover {
-  box-shadow: 0 0 8px 2px #ff6f00;
-  background: rgba(255, 111, 0, 0.1);
+  box-shadow: 0 0 8px 2px #ff6f00; /* Sombra laranja ao passar mouse */
+  background: rgba(255, 111, 0, 0.1); /* Fundo laranja translúcido no hover */
 }
 
 /* Conteúdo escondido por padrão */
 .easter-content {
-  position: fixed;
-  bottom: 90px;
-  right: 20px;
-  width: 300px;
-  max-width: 90vw;
-  background-color: #1e1e1e;
-  border-radius: 10px;
-  padding: 15px 20px;
-  box-shadow: 0 8px 24px rgba(255, 111, 0, 0.8);
-  color: #ff6f00;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 700;
-  display: none;
-  z-index: 1500;
+  position: fixed; 
+  bottom: 90px; 
+  right: 20px; 
+  width: 300px; 
+  max-width: 90vw; 
+  background-color: #1e1e1e; 
+  border-radius: 10px; 
+  padding: 15px 20px;   box-shadow: 0 8px 24px rgba(255, 111, 0, 0.8); 
+  font-family: 'Montserrat', sans-serif; 
+  font-weight: 700; 
+  display: none; /* Escondido por padrão */
+  z-index: 1500; /* Acima da maioria dos elementos, abaixo do botão */
 }
 
 /* Quando o checkbox estiver marcado, mostra o conteúdo */
 .easter-toggle:checked ~ .easter-content {
-  display: block;
+  display: block; /* Exibe o conteúdo escondido */
+}
+/* faz o footer ficar gudado*/
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
 }
 
-
+main {
+  flex: 1;
+}

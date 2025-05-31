@@ -1,193 +1,190 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap'); 
+
 
 body {
-  margin: 0;
-  font-family: 'Montserrat', sans-serif;
-  background-color: #121212;
-  color: #f1f1f1;
+  margin: 0; /* Remove margem padrão */
+  font-family: 'Montserrat', sans-serif; 
+  background-color: #121212; 
+  color: #f1f1f1; 
   
   background-image: url('../img/background7.png');
-  
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  filter: brightness(0.8);
+  background-size: cover; /* A imagem cobre todo o fundo */
+  background-position: center; 
+  background-repeat: no-repeat; /* Não repete a imagem */
+  background-attachment: fixed; /* Imagem fixa durante scroll */
+  filter: brightness(0.8); /* Escurece a imagem de fundo */
 }
 
 header {
-  background-color: rgba(34, 33, 33, 0.7);
-  padding: 10px;
-  text-align: center;
-  border-bottom: 1px solid #ffffff;
+  background-color: rgba(34, 33, 33, 0.7); /* Fundo semi-transparente escuro */
+  padding: 10px; 
+  text-align: center; 
+  border-bottom: 1px solid #ffffff; 
 }
 
 header h1 {
-  margin: 0;
-  font-size: 2rem;
+  margin: 0; 
+  font-size: 2rem; /* Tamanho grande para título */
 }
 
 nav ul {
-  list-style: none;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  margin-top: 10px;
-  gap: 20px;
+  list-style: none; 
+  padding: 0; 
+  display: flex; 
+  justify-content: center; 
+  margin-top: 10px; 
+  gap: 20px; 
 }
 
 nav a {
-  color: #e0e0f8;
-  text-decoration: none;
-  font-weight: bold;
+  color: #e0e0f8; /* Cor clara para links */
+  text-decoration: none; 
+  font-weight: bold; 
   font-size: 1rem;
   padding: 8px 14px;
-  border-radius: 8px;
-  transition: all 0.3s ease;
+  border-radius: 8px; 
+  transition: all 0.3s ease; /* Transição suave */
 }
 
 nav a:hover {
-  color: #ff6f00;
+  color: #ff6f00; /* Cor laranja ao passar o mouse */
 }
 
 nav .ativo {
-  color: #ff6f00;
-  background: rgba(255, 30, 199, 0.15);
-  color: #ff5900;
-  box-shadow: 0 0 20px #ff5900;
+  color: #ff6f00; /* Cor laranja */
+  background: rgba(255, 30, 199, 0.15); 
+  color: #ff5900; 
+  box-shadow: 0 0 20px #ff5900; /* Sombra brilhante laranja */
 }
 
 .conteudo-sobre {
-  max-width: 800px;
-  margin: 40px auto;
-  padding: 20px;
-  background-color: #1e1e1e;
-  border-radius: 10px;
-  box-shadow: 0 8px 16px rgba(255, 111, 0, 0.3);
-  font-size: 1.1rem;
-  line-height: 1.6;
-  position: relative; /* Para posicionar o botão dentro */
+  max-width: 800px; 
+  margin: 40px auto; 
+  padding: 20px; 
+  background-color: #1e1e1e; 
+  border-radius: 10px; 
+  box-shadow: 0 8px 16px rgba(255, 111, 0, 0.3); 
+  font-size: 1.1rem; /* Fonte um pouco maior */
+  line-height: 1.6; 
+  position: relative; /* Para posicionar elementos internos */
 }
 
-
 .foto-perfil {
-  width: 200px;
-  border-radius: 50%;
-  display: block;
-  margin: 0 auto 20px;
+  width: 200px; /* Largura fixa */
+  border-radius: 50%; 
+  display: block; 
+  margin: 0 auto 20px; 
 }
 
 mark {
-  background-color: #c3ff00;
-  color: black;
-  padding: 2px 4px;
-  border-radius: 8px;
+  background-color: #c3ff00; /* Fundo amarelo neon */
+  color: black; 
+  padding: 2px 4px; 
+  border-radius: 8px; 
 }
 
 .conteudo-sobre a {
-  color: #ff6f00;
-  text-decoration: none;
-  font-weight: bold;
+  color: #ff6f00; 
+  text-decoration: none; 
+  font-weight: bold; 
 }
 
 .conteudo-sobre a:hover {
-  text-decoration: underline;
+  text-decoration: underline; /* Sublinhado no hover */
 }
 
 .btn-topo {
-  position: fixed !important;
-  bottom: 30px;
-  right: 30px;
-  z-index: 1000;
+  position: fixed !important; /* Fixa o botão na tela */
+  bottom: 30px; 
+  right: 30px; 
+  z-index: 1000; /* Fica acima de outros elementos */
   background-color: #ff006f;
-  color: white !important;
-  text-decoration: none;
-  width: 48px;
-  height: 48px;
-  font-size: 24px;
-  border-radius: 50%;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.3s ease;
+  color: white !important; 
+  text-decoration: none; /* Sem sublinhado */
+  width: 48px; 
+  height: 48px; 
+  font-size: 24px; 
+  border-radius: 50%; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra leve */
+  display: flex; 
+  align-items: center; /* Centraliza verticalmente */
+  justify-content: center; /* Centraliza horizontalmente */
+  cursor: pointer; 
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Transições suaves */
 }
 
 .btn-topo:hover {
-  background-color: #ff3f90;
-  transform: scale(1.1);
+  background-color: #ff3f90; 
+  transform: scale(1.1); /* Aumenta o botão no hover */
 }
 
-
-
-
 footer {
-  text-align: center;
-  padding: 20px;
-  background-color: #1e1e1e;
-  border-top: 1px solid #333;
-  font-size: 0.9rem;
-  color: #aaa;
+  text-align: center; /* Centraliza o texto */
+  padding: 20px; /* Espaçamento interno */
+  background-color: #1e1e1e; 
+  border-top: 1px solid #333; 
+  font-size: 0.9rem; /* Fonte menor */
+  color: #aaa; 
 }
 
 /* Botão para ativar o modo segredo */
 .botao-modo-segredo {
-  color: #ff6f00;
-  cursor: pointer;
-  font-weight: bold;
-  text-decoration: underline;
-  width: fit-content;
-  margin: 30px auto;
-  user-select: none;
-  transition: color 0.3s ease;
-  display: block;
+  color: #ff6f00; 
+  cursor: pointer; 
+  font-weight: bold; 
+  text-decoration: underline; /* Sublinhado */
+  width: fit-content; /* Largura ajustada ao conteúdo */
+  margin: 30px auto; 
+  user-select: none; /* Não permite seleção do texto */
+  transition: color 0.3s ease; /* Transição suave da cor */
+  display: block; /* Exibe como bloco */
   text-align: center;
 }
 
 .botao-modo-segredo:hover,
 .botao-modo-segredo:focus {
-  color: #ffa500;
-  outline: none;
+  color: #ffa500; 
+  outline: none; /* Remove contorno */
 }
 
 /* Conteúdo do modo segredo escondido inicialmente */
 .conteudo-modo-segredo {
-  max-width: 400px;
-  margin: 20px auto;
-  background: #1e1e1e;
-  border: 3px solid #ff6f00;
-  border-radius: 15px;
-  box-shadow: 0 0 30px #ff6f00cc;
-  padding: 30px 25px 40px;
-  color: #f1f1f1;
-  text-align: center;
-  opacity: 0;
-  max-height: 0;
-  overflow: hidden;
-  transition: opacity 0.5s ease, max-height 0.5s ease;
-  pointer-events: none;
+  max-width: 400px; /* Largura máxima */
+  margin: 20px auto; /* Centraliza com margem vertical */
+  background: #1e1e1e; 
+  border: 3px solid #ff6f00; 
+  border-radius: 15px; 
+  box-shadow: 0 0 30px #ff6f00cc; /* Sombra laranja intensa */
+  padding: 30px 25px 40px; /* Espaçamento interno */
+  color: #f1f1f1; 
+  text-align: center; 
+  opacity: 0; /* Invisível */
+  max-height: 0; 
+  overflow: hidden; /* Oculta conteúdo excedente */
+  transition: opacity 0.5s ease, max-height 0.5s ease; /* Transição suave */
+  pointer-events: none; /* Desativa interação */
 }
 
 /* Mostrar conteúdo quando o checkbox estiver marcado */
 #controle-modo-segredo:checked + .conteudo-modo-segredo {
-  opacity: 1;
-  max-height: 500px; /* Ajuste conforme o conteúdo */
-  pointer-events: auto;
+  opacity: 1; /* Visível */
+  max-height: 500px; /* Altura máxima para mostrar o conteúdo */
+  pointer-events: auto; /* Ativa interação */
 }
 
-/* Estilo do conteúdo interno */
+/* Estilo do conteúdo interno do modo segredo */
 .conteudo-modo-segredo h3 {
-  margin-bottom: 15px;
-  font-size: 1.5rem;
-  color: #ff6f00;
+  margin-bottom: 15px; /* Espaço abaixo */
+  font-size: 1.5rem; /* Tamanho maior */
+  color: #ff6f00; 
 }
 
 .conteudo-modo-segredo p {
-  font-size: 1.1rem;
-  line-height: 1.5;
+  font-size: 1.1rem; 
+  line-height: 1.5; /* Espaçamento entre linhas */
 }
-/* habilidades */
+
+/* habilidades (repetição dos estilos) */
 nav ul {
   list-style: none;
   padding: 0;
@@ -214,6 +211,7 @@ nav a.ativo {
   box-shadow: 0 0 20px #ff5900;
 }
 
+/* Grade principal */
 main.grade {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -223,6 +221,7 @@ main.grade {
   margin: 0 auto;
 }
 
+/* Cartões redes sociais */
 .redes-sociais {
   background-color: #1e1e1e;
   border-radius: 12px;
@@ -259,14 +258,19 @@ main.grade {
   font-size: 1.1rem;
   color: #fff;
 }
-.meio{  background-color: #1e1e1e;
+
+/* Estilo específico para uma seção "meio" */
+.meio {  
+  background-color: #1e1e1e;
   border-radius: 12px;
   padding: 30px 20px;
   color: #f1f1f1;
   font-family: 'Montserrat', sans-serif;
-  text-align: center;}
+  text-align: center;
+}
 
-  o  {
+/* Elemento 'o' estilizado com fundo ciano */
+o {
   background-color: rgb(0, 255, 255);
   color: black;
   padding: 2px 4px;

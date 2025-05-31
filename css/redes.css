@@ -1,118 +1,133 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap'); /* Importa a fonte Montserrat do Google Fonts */
 
+/* Aplica estilos ao html e body */
 html, body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  font-family: 'Montserrat', sans-serif;
-  background-color: #121212;
-  color: #f1f1f1;
-  background-image: url('../img/background_redes.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  filter: brightness(0.85);
-  display: flex;
-  flex-direction: column;
+  height: 100%; 
+  margin: 0; 
+  padding: 0; 
+  font-family: 'Montserrat', sans-serif; 
+  background-color: #121212; 
+  color: #f1f1f1; 
+  background-image: url('../img/background_redes.png'); 
+  background-size: cover; /* A imagem cobre toda a área */
+  background-position: center; /* Centraliza a imagem */
+  background-repeat: no-repeat; /* Não repete a imagem */
+  background-attachment: fixed; /* Imagem fixa durante o scroll */
+  filter: brightness(0.85); /* Escurece um pouco a imagem de fundo */
+  display: flex; 
+  flex-direction: column; /* Organiza itens em coluna */
 }
 
+/* Wrapper que ocupa todo espaço disponível */
 .wrapper {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
+  flex: 1; /* Ocupa o espaço restante do container pai */
+  display: flex; 
+  flex-direction: column; /* Itens organizados em coluna */
 }
 
+/* Estilos para o cabeçalho */
 header {
-  background-color: rgba(34, 33, 33, 0.7);
-  padding: 10px;
-  text-align: center;
-  border-bottom: 1px solid #fff;
+  background-color: rgba(34, 33, 33, 0.7); /* Fundo semi-transparente escuro */
+  padding: 10px; 
+  text-align: center; 
+  border-bottom: 1px solid #fff; 
 }
 
+/* Estilos para o título dentro do header */
 header h1 {
-  margin: 0;
-  font-size: 2rem;
-  color: #f1f1f1;
+  margin: 0; 
+  font-size: 2rem; /* Tamanho grande para título */
+  color: #f1f1f1; 
 }
 
+/* Estilos para lista de navegação */
 nav ul {
-  list-style: none;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  margin-top: 10px;
-  gap: 20px;
+  list-style: none; 
+  padding: 0; 
+  display: flex; 
+  justify-content: center; 
+  margin-top: 10px; 
+  gap: 20px; 
 }
 
+/* Estilos para os links da navegação */
 nav a {
-  color: #e0e0f8;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 1rem;
-  padding: 8px 14px;
-  border-radius: 8px;
-  transition: all 0.3s ease;
+  color: #e0e0f8; 
+  text-decoration: none; 
+  font-weight: bold; 
+  font-size: 1rem; 
+  padding: 8px 14px; 
+  border-radius: 8px; 
+  transition: all 0.3s ease; /* Transição suave para todos os efeitos */
 }
 
+/* Estilos para links ao passar o mouse e quando ativo */
 nav a:hover,
 nav a.ativo {
-  background: rgba(255, 30, 199, 0.15);
-  color: #ff5900;
-  box-shadow: 0 0 20px #ff5900;
+  background: rgba(255, 30, 199, 0.15); 
+  color: #ff5900; 
+  box-shadow: 0 0 20px #ff5900; /* Sombra laranja brilhante */
 }
 
+/* Grade principal na tag main */
 main.grade {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 25px;
-  padding: 40px 20px;
-  max-width: 1200px;
-  margin: 0 auto;
+  display: grid; /* Usa grid layout */
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); 
+  gap: 25px; 
+  padding: 40px 20px; 
+  max-width: 1200px; 
+  margin: 0 auto; 
 }
 
+
+/* Cartão das redes sociais */
 .redes-sociais {
-  background-color: #1e1e1e;
-  border-radius: 12px;
-  padding: 30px 20px;
+  background-color: #1e1e1e; 
+  border-radius: 12px; 
+  padding: 30px 20px; 
   color: #f1f1f1;
-  font-family: 'Montserrat', sans-serif;
-  text-align: center;
-  text-decoration: none;
-  font-weight: bold;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 15px;
+  font-family: 'Montserrat', sans-serif; 
+  text-align: center; 
+  text-decoration: none; 
+  font-weight: bold; 
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transições suaves */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Sombra leve */
+  display: flex; 
+  flex-direction: column; /* Organiza itens em coluna */
+  align-items: center; 
+  gap: 15px; /* Espaçamento entre itens */
 }
 
+/* Efeito hover no cartão das redes sociais */
 .redes-sociais:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 16px 24px rgba(255, 111, 0, 0.5);
+  transform: translateY(-8px); /* Eleva o cartão */
+  box-shadow: 0 16px 24px rgba(255, 111, 0, 0.5); /* Sombra laranja mais forte */
 }
 
+/* Estilos para o ícone social dentro do cartão */
 .icone-social {
-  width: 60px;
-  height: 60px;
-  transition: transform 0.3s;
+  width: 60px; 
+  height: 60px; 
+  transition: transform 0.3s; /* Transição suave para transformações */
 }
 
+/* Efeito hover no ícone dentro do cartão */
 .redes-sociais:hover .icone-social {
-  transform: scale(1.1);
+  transform: scale(1.1); /* Aumenta o ícone */
 }
 
+/* Estilos para o conteúdo textual dentro do cartão */
 .redes-sociais .conteudo {
-  font-size: 1.1rem;
-  color: #fff;
+  font-size: 1.1rem; /* Fonte um pouco maior */
+  color: #fff; 
 }
 
+/* Estilos para o rodapé */
 footer {
-  text-align: center;
-  padding: 20px;
-  background-color: #1e1e1e;
-  border-top: 1px solid #333;
-  font-size: 0.9rem;
-  color: #aaa;
+  text-align: center; 
+  padding: 20px; 
+  background-color: #1e1e1e; 
+  border-top: 1px solid #333; 
+  font-size: 0.9rem; /* Fonte menor */
+  color: #aaa; 
 }

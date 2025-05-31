@@ -1,148 +1,180 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap'); /* Importa a fonte Montserrat do Google Fonts */
 
+/* Estilos para o corpo da página */
 body {
-  margin: 0;
-  font-family: 'Montserrat', sans-serif;
-  background-color: #121212;
-  color: #f1f1f1;
-  background-image: url('../img/background2.jpeg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  filter: brightness(0.8);
+  margin: 0; 
+  font-family: 'Montserrat', sans-serif; 
+  background-color: #121212; 
+  color: #f1f1f1; 
+  background-image: url('../img/background2.jpeg'); 
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; /* Não repete a imagem */
+  background-attachment: fixed; /* Imagem fixa ao rolar a página */
+  filter: brightness(0.8); /* Escurece um pouco a imagem de fundo */
 }
 
+/* Estilos para o cabeçalho */
 header {
-  background-color: rgba(34, 33, 33, 0.7);
-  padding: 10px;
-  text-align: center;
-  border-bottom: 1px solid #fff;
+  background-color: rgba(34, 33, 33, 0.7); 
+  padding: 10px; 
+  text-align: center; 
+  border-bottom: 1px solid #fff; 
 }
 
+/* Estilo para o título dentro do header */
 header h1 {
-  margin: 0;
-  font-size: 2rem;
+  margin: 0; 
+  font-size: 2rem; 
 }
 
+/* Estilos para a lista de navegação */
 nav ul {
-  list-style: none;
-  padding: 0;
+  list-style: none; 
+  padding: 0; 
   display: flex;
-  justify-content: center;
-  margin-top: 10px;
-  gap: 20px;
+  justify-content: center; 
+  margin-top: 10px; 
+  gap: 20px; 
 }
 
+/* Estilos para os links de navegação */
 nav a {
-  color: #e0e0f8;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 1rem;
-  padding: 8px 14px;
-  border-radius: 8px;
-  transition: all 0.3s ease;
+  color: #e0e0f8; 
+  text-decoration: none; 
+  font-weight: bold; 
+  font-size: 1rem; 
+  padding: 8px 14px; 
+  border-radius: 8px; 
+  transition: all 0.3s ease; /* Transição suave para efeitos */
 }
 
+/* Estilos para links ao passar o mouse ou quando ativo */
 nav a:hover,
 nav a.ativo {
-  background: rgba(255, 30, 199, 0.15);
+  background: rgba(255, 30, 199, 0.15); 
   color: #ff5900;
-  box-shadow: 0 0 20px #ff5900;
+  box-shadow: 0 0 20px #ff5900; /* Sombra brilhante ao redor */
 }
 
+/* Container principal dos projetos */
 .container-projetos {
-  max-width: 1100px;
-  margin: 40px auto;
-  padding: 0 20px;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 30px;
+  max-width: 1100px; 
+  margin: 40px auto; 
+  padding: 0 20px; 
+  display: grid; 
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+  gap: 30px; /* Espaçamento entre os projetos */
 }
 
+/* Estilos para cada projeto */
 .projeto {
-  background-color: #1e1e1e;
-  border-radius: 12px;
-  padding: 20px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
-  text-align: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  
+  background-color: #1e1e1e; 
+  border-radius: 12px; 
+  padding: 20px; 
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Sombra leve */
+  text-align: center; 
+  transition: transform 0.3s ease, box-shadow 0.3s ease; 
+  display: flex; 
+  flex-direction: column; /* Itens em coluna */
+  gap: 15px; 
 }
 
+/* Efeito hover para projetos */
 .projeto:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 16px 24px rgba(255, 111, 0, 0.5);
+  transform: translateY(-8px); /* Levanta o cartão */
+  box-shadow: 0 16px 24px rgba(255, 111, 0, 0.5); /* Sombra laranja mais intensa */
 }
 
+/* Estilos para imagens dentro dos projetos */
 .projeto img {
-  max-width: 100%;
-  height: auto;       /* mantém a proporção original da imagem */
-  border-radius: 1000px;
+  max-width: 100%; 
+  height: auto;       
+  border-radius: 1000px; 
   object-fit: contain; /* mantém toda a imagem visível */
-  background-color: #222; /* opcional, para a área extra da imagem */
+  background-color: #222; 
 }
 
+/* Estilos para títulos dos projetos */
 .projeto h2 {
-  margin: 0;
-  font-size: 1.5rem;
-  color: #ff6f00;
+  margin: 0; 
+  font-size: 1.5rem; 
+  color: #ff6f00; 
 }
 
+/* Estilos para descrições dos projetos */
 .projeto p {
-  font-size: 1rem;
-  line-height: 1.4;
-  color: #ddd;
+  font-size: 1rem; 
+  line-height: 1.4; 
+  color: #ddd; 
 }
 
+/* Estilo para botões */
 .botao {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #ff6f00;
-  color: #fff;
-  font-weight: 700;
-  border-radius: 8px;
-  text-decoration: none;
-  transition: background-color 0.3s;
-  margin-top: auto;
+  display: inline-block; 
+  padding: 10px 20px; 
+  background-color: #ff6f00; 
+  color: #fff; 
+  font-weight: 700; 
+  border-radius: 8px; 
+  text-decoration: none; 
+  transition: background-color 0.3s; /* Transição para hover */
+  margin-top: auto; /* Empurra botão para baixo se é flex */
 }
 
+/* Efeito hover para botões */
 .botao:hover {
-  background-color: #e65c00;
+  background-color: #e65c00; 
 }
+
 /* BOTÃO "↑ TOPO" FIXO E SEMPRE VISÍVEL */
 .btn-topo {
-  position: fixed;
-  bottom: 30px;
-  right: 30px;
-  z-index: 1000;
-  background-color: #ff006f;
-  color: white;
-  text-decoration: none;
-  width: 48px;
-  height: 48px;
-  font-size: 24px;
-  border-radius: 50%;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-  transition: background-color 0.3s ease, transform 0.3s ease;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-}
-.btn-topo:hover {
-  background-color: #ff3f90;
-  transform: scale(1.1);
+  position: fixed; 
+  bottom: 30px; 
+  right: 30px; 
+  z-index: 1000; 
+  background-color: #ff006f; 
+  color: white; 
+  text-decoration: none; 
+  width: 48px; 
+  height: 48px; 
+  font-size: 24px; 
+  border-radius: 50%; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra leve */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Transições */
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+  cursor: pointer; 
 }
 
+/* Efeito hover no botão topo */
+.btn-topo:hover {
+  background-color: #ff3f90; 
+  transform: scale(1.1); /* Aumenta um pouco */
+}
+
+/* Estilos para o rodapé */
 footer {
-  text-align: center;
-  padding: 20px;
-  background-color: #1e1e1e;
-  border-top: 1px solid #333;
-  font-size: 0.9rem;
-  color: #aaa;
+  text-align: center; 
+  padding: 20px; 
+  background-color: #1e1e1e; 
+  border-top: 1px solid #333; 
+  font-size: 0.9rem; 
+  color: #aaa; 
+}
+
+
+
+/* faz o footer ficar gudado no final da página */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
 }

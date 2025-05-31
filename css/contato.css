@@ -1,121 +1,126 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
+
 body {
-  margin: 0;
-  font-family: 'Montserrat', sans-serif;
-  background-color: #121212;
+  margin: 0; 
+  font-family: 'Montserrat', sans-serif; 
+  background-color: #121212; 
   color: #f1f1f1;
-  background-image: url('../img/background3.jpeg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  filter: brightness(0.8);
+  background-image: url('../img/background3.jpeg'); 
+  background-size: cover; 
+  background-position: center; /* Centraliza a imagem de fundo */
+  background-repeat: no-repeat; /* Evita que a imagem de fundo se repita */
+  background-attachment: fixed; /* Fixa o fundo na rolagem da página */
+  filter: brightness(0.8); /* Escurece um pouco todo o conteúdo da página */
 }
 
 header {
-  background-color: rgba(34, 33, 33, 0.7);
-  padding: 10px;
-  text-align: center;
-  border-bottom: 1px solid #fff;
+  background-color: rgba(34, 33, 33, 0.7); /* Fundo escuro com transparência para o cabeçalho */
+  padding: 10px; 
+  text-align: center; 
+  border-bottom: 1px solid #fff; 
 }
 
 header h1 {
-  margin: 0;
-  font-size: 2rem;
+  margin: 0; 
+  font-size: 2rem; 
 }
 
 nav ul {
-  list-style: none;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  margin-top: 10px;
-  gap: 20px;
+  list-style: none; 
+  padding: 0; 
+  display: flex; 
+  justify-content: center; 
+  margin-top: 10px; /* espaço acima da navegação */
+  gap: 20px; /* Espaço entre os itens do menu */
 }
 
 nav a {
-  color: #e0e0f8;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 1rem;
-  padding: 8px 14px;
-  border-radius: 8px;
-  transition: all 0.3s ease;
+  color: #e0e0f8; 
+  text-decoration: none; 
+  font-weight: bold; 
+  font-size: 1rem; 
+  padding: 8px 14px; 
+  border-radius: 8px; 
+  transition: all 0.3s ease; /* Transição suave nos efeitos */
 }
 
 nav a:hover,
 nav a.ativo {
-  background: rgba(255, 30, 199, 0.15);
-  color: #ff5900;
-  box-shadow: 0 0 20px #ff5900;
+  background: rgba(255, 30, 199, 0.15); 
+  color: #ff5900; 
+  box-shadow: 0 0 20px #ff5900; /* Efeito de brilho em volta do link */
 }
 
 .container-contato {
-  max-width: 500px;
-  margin: 40px auto;
-  background-color: #1e1e1e;
-  padding: 30px 25px;
-  border-radius: 12px;
-  box-shadow: 0 8px 20px rgba(255, 111, 0, 0.3);
+  max-width: 500px; 
+  margin: 40px auto; 
+  background-color: #1e1e1e; 
+  padding: 30px 25px; 
+  border-radius: 12px; 
+  box-shadow: 0 8px 20px rgba(255, 111, 0, 0.3); 
 }
 
 .form-contato h2 {
-  text-align: center;
-  margin-bottom: 25px;
-  color: #ff6f00;
+  text-align: center; 
+  margin-bottom: 25px; 
+  color: #ff6f00; 
 }
 
 .form-contato label {
-  display: block;
-  margin-bottom: 8px;
-  font-weight: 600;
+  display: block; 
+  margin-bottom: 8px; 
+  font-weight: 600; /* Deixa o texto um pouco mais pesado (sem ser negrito total) */
 }
 
 .form-contato input,
 .form-contato textarea {
-  width: 100%;
-  padding: 12px;
-  margin-bottom: 20px;
-  border-radius: 8px;
-  border: none;
-  font-size: 1rem;
-  font-family: 'Montserrat', sans-serif;
-  background-color: #333;
-  color: #f1f1f1;
-  resize: vertical;
-  box-sizing: border-box;
-  transition: background-color 0.3s;
+  width: 100%; 
+  padding: 12px; 
+  margin-bottom: 20px; 
+  border-radius: 8px; 
+  border: none; 
+  font-size: 1rem; 
+  font-family: 'Montserrat', sans-serif; 
+  background-color: #333; 
+  color: #f1f1f1; 
+  resize: vertical; /* Permite redimensionar somente na vertical */
+  box-sizing: border-box; /* Inclui padding e borda na largura total */
+  transition: background-color 0.3s; /* Transição suave ao focar */
 }
 
 .form-contato input:focus,
 .form-contato textarea:focus {
-  background-color: #444;
-  outline: none;
+  background-color: #444; 
+  outline: none; 
 }
 
 .form-contato button {
-  width: 100%;
-  padding: 14px;
+  width: 100%; 
+  padding: 14px; 
   background-color: #ff6f00;
-  border: none;
-  border-radius: 8px;
-  font-weight: 700;
-  font-size: 1.1rem;
-  color: #fff;
-  cursor: pointer;
-  transition: background-color 0.3s;
+  border: none; 
+  border-radius: 8px; 
+  font-weight: 700; 
+  font-size: 1.1rem; 
+  color: #fff; 
+  cursor: pointer; /* Muda o cursor ao passar o mouse */
+  transition: background-color 0.3s; /* Transição suave da cor */
 }
 
 .form-contato button:hover {
-  background-color: #e65c00;
+  background-color: #e65c00; /* Laranja mais escuro ao passar o mouse */
 }
 
 footer {
-  text-align: center;
-  padding: 20px;
-  background-color: #1e1e1e;
-  border-top: 1px solid #333;
-  font-size: 0.9rem;
-  color: #aaa;
+  text-align: center; 
+  padding: 20px; 
+  background-color: #1e1e1e; 
+  border-top: 1px solid #333; 
+  font-size: 0.9rem; 
+  color: #aaa; 
 }
+
+
+
+
